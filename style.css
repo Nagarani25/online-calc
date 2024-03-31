@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background-image: url(https://img.freepik.com/free-vector/gradient-futuristic-background_23-2149117231.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator
+{
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow:inset 5px 5px 12px #ffffff,
+    5px 5px 12px rgba(0,0,0,.16) ;
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow:inset 5px 5px 12px #ffffff,
+    5px 5px 12px rgba(0,0,0,.16) ;
+    color: white;
+    font-size: 30px;
+    text-align: end;
+    padding-right: 10px;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    height: 48px;
+    width: 48px;
+    border: 0;
+    border-radius: 50%;
+    box-shadow:inset 5px 5px 12px #ffffff,
+    5px 5px 12px rgba(0,0,0,.16) ;
+    margin: 10px;
+}
+.percent
+{
+    font-size: 25px;
+}
+.equal{
+    width: 116px;
+    border-radius: 30px;
+}

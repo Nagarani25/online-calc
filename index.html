@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/564/564429.png">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="os">
+            <button onclick="Clear()">CL</button>
+            <button onclick="del()">DEL</button>
+            <button class="percent" onclick="display('%')">%</button>
+            <button class="percent" onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button class="percent" onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button class="percent" onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button class="percent" onclick="display('+')">+</button>
+            <button class="percent" onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+
+            
+        </div>
+    </div>
+
+    <script>
+        let js=document.getElementById('os');
+        function Clear()
+        {
+            js.value="";
+        }
+        function del()
+        {
+            js.value=js.value.slice(0,-1);
+        }
+        function display(txt)
+        {
+            js.value=js.value+txt;
+        }
+        function calculate()
+        {
+            js.value=eval(js.value);
+        }
+    </script>
+    
+</body>
+</html>
